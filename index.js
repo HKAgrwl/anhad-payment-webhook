@@ -12,6 +12,9 @@ app.listen(port, () => {
     console.log(`Server listening on port ${port}`);
 });
 
+app.get('/',(req,res)=>{
+  res.sendStatus(200)
+})
 
 app.post('/logs', (req, res) => {
     try {
